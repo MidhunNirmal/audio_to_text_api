@@ -3,4 +3,4 @@ fastapi
 python-multipart
 uvicorn
 typing
-BytesIO
+Python-IO
