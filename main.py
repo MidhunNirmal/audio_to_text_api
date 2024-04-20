@@ -23,7 +23,7 @@ def read_root(audio_file: UploadFile = File(...)):
         # recognize speech using Google Speech Recognition
     except LookupError:                                 # speech is unintelligible
         print("Could not understand audio")
-    return {"Hello": out}
+    return {"text": out}
 
 
 
