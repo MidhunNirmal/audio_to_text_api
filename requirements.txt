@@ -1,4 +1,5 @@
 SpeechRecognition==2.1.3
 fastapi
+python-multipart
 uvicorn
 typing
