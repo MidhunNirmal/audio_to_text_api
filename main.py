@@ -21,8 +21,9 @@ def read_root(audio_uri: str):
         with sr.AudioFile(audio_data) as source:
             audio = r.record(source)  # Extract audio data
             
-        transcription = r.recognize_google(audio)  # Use Google Speech Recognition
-        
+        transcription = r.recognize_google(audio)
+        # Use Google Speech Recognition
+        print("audio is",transcription)
         return {"transcription": transcription}
     
     except Exception as e:
